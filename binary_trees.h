@@ -43,5 +43,54 @@ void binary_tree_print(const binary_tree_t *root);
  * Return: A pointer to the new node, or NULL on failure
  */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
+/**
+ * binary_tree_insert_left - Insert a node as the left-child of another node
+ *			     If parent already has a left-child, the new
+ *			     node must take its place, and the old
+ *			     left-child must be set as the left-child
+ *			     of the new node.
+ * @parent: A pointer to the parent node of the node to create
+ * @value: The value to put in the new node
+ *
+ * Return: A pointer to the new node,
+ *	   or NULL on failure or if parent is NULL
+ */
+binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value);
+/**
+ * binary_tree_insert_right - Insert a node as the right-child of another
+ *			      node. If parent already has a right-child,
+ *			      the new node must take its place, and the old
+ *			      right-child must be set as the
+ *			      right-child of the new node.
+ * @parent: A pointer to the parent node of the node to create
+ * @value: The value to put in the new node
+ *
+ * Return: A pointer to the new node,
+ *	   or NULL on failure or if parent is NULL
+ */
+binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value);
+/**
+ * binary_tree_delete - Delete an entire binary tree.
+ *			If tree is NULL, do nothing.
+ * @tree: A pointer to the root node of the tree to delete
+ * Return: Void
+ */
+void binary_tree_delete(binary_tree_t *tree);
+/**
+ * binary_tree_is_leaf - Check if a node is a leaf.
+ *			 If node is NULL return 0.
+ * @node: A pointer to the node to check
+ * Return: 1 - If node is a leaf
+ *	   0 - otherwise
+ */
+int binary_tree_is_leaf(const binary_tree_t *node);
+/**
+ * binary_tree_is_root - Check if a node is a root.
+ *			 If node is NULL, return 0.
+ * @node: A pointer to the node to check
+ * Return: 1 - If node is a root
+ *	   0 - otherwise
+ */
+int binary_tree_is_root(const binary_tree_t *node);
 
 #endif /* BINARY_TREES_H */
