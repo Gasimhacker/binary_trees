@@ -117,5 +117,13 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
  * Return: Void
  */
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+/**
+ * binary_tree_height - Measures the height of a binary tree
+ *
+ * @tree: Pointer to the node to measures the height
+ *
+ * Return: The height of the tree starting at @node
+ */
+size_t binary_tree_height(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
