@@ -188,5 +188,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree);
  *	   Otherwise - NULL
  */
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
+/**
+ * binary_tree_uncle - Find the uncle of a node.
+ * @node: A pointer to the node to to find the uncle
+ * Return: If node has an uncle - A pointer to the uncle node
+ *	   Otherwise - NULL
+ */
+binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 
 #endif /* BINARY_TREES_H */
