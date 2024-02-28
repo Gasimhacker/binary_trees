@@ -205,5 +205,14 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
  */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
 		const binary_tree_t *second);
+/**
+ * binary_tree_levelorder - Go through a binary tree using
+ *			    level-order traversal
+ * @tree: A pointer a pointer to the root node of the tree to traverse
+ * @func: A pointer to a function to call for each node.
+ *
+ * Return: Void
+ */
+void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int));
 
 #endif /* BINARY_TREES_H */
