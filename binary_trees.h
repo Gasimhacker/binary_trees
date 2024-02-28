@@ -173,5 +173,13 @@ int binary_tree_balance(const binary_tree_t *tree);
  *	   0 - Otherwise
  */
 int binary_tree_is_full(const binary_tree_t *tree);
+/**
+ * binary_tree_is_perfect - Check if a binary tree is perfect
+ * @tree: Pointer to the node to start from
+ *
+ * Return: 1 - If it is a perfect binary tree
+ *	   0 - Otherwise
+ */
+int binary_tree_is_perfect(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
