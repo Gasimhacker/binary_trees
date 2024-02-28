@@ -181,5 +181,12 @@ int binary_tree_is_full(const binary_tree_t *tree);
  *	   0 - Otherwise
  */
 int binary_tree_is_perfect(const binary_tree_t *tree);
+/**
+ * binary_tree_sibling - Find the sibling of a node.
+ * @node: A pointer to the node to to find the sibling
+ * Return: If node has a sibling - A pointer to the sibling node
+ *	   Otherwise - NULL
+ */
+binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 
 #endif /* BINARY_TREES_H */
