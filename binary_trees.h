@@ -275,5 +275,14 @@ bst_t *bst_insert(bst_t **tree, int value);
  *	   On failure - NULL
  */
 bst_t *array_to_bst(int *array, size_t size);
+/**
+ * bst_search - Search for a value in a Binary Search Tree
+ * @tree: A pointer to the root node of the BST to search
+ * @value: The value to search in the tree
+ *
+ * Return: If the value is found - A pointer to the node containing the value
+ *	   Otherwise - NULL
+ */
+bst_t *bst_search(const bst_t *tree, int value);
 
 #endif /* BINARY_TREES_H */
