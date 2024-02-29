@@ -266,5 +266,14 @@ int binary_tree_is_bst(const binary_tree_t *tree);
  *	   On failure - NULL
  */
 bst_t *bst_insert(bst_t **tree, int value);
+/**
+ * array_to_bst - Build a Binary Search Tree from an array
+ * @array: A pointer to the first element of the array to be converted
+ * @size: The  number of element in the array
+ *
+ * Return: On success - A pointer to the root node of the created BST
+ *	   On failure - NULL
+ */
+bst_t *array_to_bst(int *array, size_t size);
 
 #endif /* BINARY_TREES_H */
