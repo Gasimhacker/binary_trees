@@ -3,7 +3,7 @@
 
 /* "Header files" */
 #include <stdlib.h>
-
+#include <limits.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -249,5 +249,13 @@ binary_tree_t *binary_tree_rotate_left(binary_tree_t *tree);
  * Return: A pointer to the new root node of the tree once rotated
  */
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
+/**
+ * binary_tree_is_bst - Check if a binary tree is a BST
+ * @tree: A pointer a pointer to the root node of the tree to check
+ *
+ * Return: If the binary tree is BST - 1
+ *	   Otherwise - 0
+ */
+int binary_tree_is_bst(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
