@@ -257,5 +257,14 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree);
  *	   Otherwise - 0
  */
 int binary_tree_is_bst(const binary_tree_t *tree);
+/**
+ * bst_insert - Insert a value in a Binary Search Tree
+ * @tree: A pointer to pointer to the root node of the tree
+ * @value: The value to store in the node to be inserted
+ *
+ * Return: On success - A pointer to the created node m
+ *	   On failure - NULL
+ */
+bst_t *bst_insert(bst_t **tree, int value);
 
 #endif /* BINARY_TREES_H */
