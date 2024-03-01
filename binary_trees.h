@@ -310,5 +310,68 @@ int binary_tree_is_avl(const binary_tree_t *tree);
  *	   On failure - NULL
  */
 bst_t *avl_insert(bst_t **tree, int value);
+/**
+ * heap_to_sorted_array - converts a Binary Max Heap
+ * to a sorted array of integers
+ *
+ * @heap: pointer to the root node of the heap to convert
+ * @size: address to store the size of the array
+ *
+ * Return: pointer to array sorted in descending order
+ **/
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
+/**
+ * heap_extract - extracts the root node from a Max Binary Heap
+ * @root: pointer to the heap root
+ * Return: value of extracted node
+ **/
+int heap_extract(heap_t **root);
+/**
+ * array_to_heap - builds a Max Binary Heap tree from an array
+ * @array: a pointer to the first element of the array to be converted
+ * @size: the number of element in the array
+ *
+ * Return: a pointer to the root node of the created Binary Heap
+ *         NULL on failure
+ */
+heap_t *array_to_heap(int *array, size_t size);
+/**
+ * heap_insert - inserts a value in Max Binary Heap
+ * @root: a double pointer to the root node of the Heap to insert the value
+ * @value: the value to store in the node to be inserted
+ *
+ * Return: a pointer to the created node
+ *         NULL on failure
+ */
+heap_t *heap_insert(heap_t **root, int value);
+/**
+ * binary_tree_is_heap - checks if a binary tree is heap
+ * @tree: pointer to the node
+ * Return: 1 in case BTS /  0 otherwise
+ **/
+int binary_tree_is_heap(const binary_tree_t *tree);
+/**
+ * sorted_array_to_avl - creates root node and calls to create_tree
+ *
+ * @array: input array of integers
+ * @size: size of array
+ * Return: pointer to the root
+ */
+avl_t *sorted_array_to_avl(int *array, size_t size);
+/**
+ * avl_remove - remove a node from a AVL tree
+ * @root: root of the tree
+ * @value: node with this value to remove
+ * Return: the tree changed
+ */
+avl_t *avl_remove(avl_t *root, int value);
+/**
+ * array_to_avl - Builds an AVL tree from an array.
+ * @array: A pointer to the first element of the array to be converted.
+ * @size: The number of elements in @array.
+ *
+ * Return: A pointer to the root node of the created AVL, or NULL upon failure.
+ */
+avl_t *array_to_avl(int *array, size_t size);
 
 #endif /* BINARY_TREES_H */
