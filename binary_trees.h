@@ -284,5 +284,14 @@ bst_t *array_to_bst(int *array, size_t size);
  *	   Otherwise - NULL
  */
 bst_t *bst_search(const bst_t *tree, int value);
+/**
+ * bst_remove - Remove a node from a Binary Search Tree
+ * @root: A pointer to the root node of the tree where you will remove a node
+ * @value: The value to remove in the tree
+ *
+ * Return: A pointer to the new root node of the
+ *	   tree after removing the desired value
+ */
+bst_t *bst_remove(bst_t *root, int value);
 
 #endif /* BINARY_TREES_H */
