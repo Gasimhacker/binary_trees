@@ -293,5 +293,13 @@ bst_t *bst_search(const bst_t *tree, int value);
  *	   tree after removing the desired value
  */
 bst_t *bst_remove(bst_t *root, int value);
+/**
+ * binary_tree_is_avl - Check if a binary tree is a AVL
+ * @tree: A pointer a pointer to the root node of the tree to check
+ *
+ * Return: If the binary tree is AVL - 1
+ *	   Otherwise - 0
+ */
+int binary_tree_is_avl(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
