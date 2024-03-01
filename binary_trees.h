@@ -301,5 +301,14 @@ bst_t *bst_remove(bst_t *root, int value);
  *	   Otherwise - 0
  */
 int binary_tree_is_avl(const binary_tree_t *tree);
+/**
+ * avl_insert - Insert a value in a AVL Tree
+ * @tree: A pointer to pointer to the root node of the tree
+ * @value: The value to store in the node to be inserted
+ *
+ * Return: On success - A pointer to the created node m
+ *	   On failure - NULL
+ */
+bst_t *avl_insert(bst_t **tree, int value);
 
 #endif /* BINARY_TREES_H */
