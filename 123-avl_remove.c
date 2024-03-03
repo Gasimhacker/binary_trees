@@ -1,9 +1,8 @@
 #include "binary_trees.h"
 
 /**
- * rebalance_tree - Return the tree to the balanced state
+ * rebalance - Return the tree to the balanced state
  * @tree: A double pointer to the unbalanced tree
- * @value: The new inserted value
  *
  * Return: A pointer to the new root
  */
