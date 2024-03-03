@@ -319,5 +319,14 @@ bst_t *avl_insert(bst_t **tree, int value);
  *	   On failure - NULL
  */
 avl_t *array_to_avl(int *array, size_t size);
+/**
+ * avl_remove - Remove a node from a Binary Search Tree
+ * @root: A pointer to the root node of the tree where you will remove a node
+ * @value: The value to remove in the tree
+ *
+ * Return: A pointer to the new root node of the tree
+ *	   after removing the desired value
+ */
+avl_t *avl_remove(avl_t *root, int value);
 
 #endif /* BINARY_TREES_H */
