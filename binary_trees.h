@@ -336,5 +336,11 @@ avl_t *avl_remove(avl_t *root, int value);
  * Return: pointer to the root
  */
 avl_t *sorted_array_to_avl(int *array, size_t size);
+/**
+ * binary_tree_is_heap - checks if a binary tree is heap
+ * @tree: pointer to the node
+ * Return: 1 in case BTS /  0 otherwise
+ **/
+int binary_tree_is_heap(const binary_tree_t *tree);
 
 #endif /* BINARY_TREES_H */
