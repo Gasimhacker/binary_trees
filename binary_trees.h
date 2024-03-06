@@ -367,5 +367,16 @@ heap_t *array_to_heap(int *array, size_t size);
  * Return: The value of extracted node
  **/
 int heap_extract(heap_t **root);
+/**
+ * heap_to_sorted_array - Convert a Binary Max Heap
+ *			  to a sorted array of integers
+ *
+ * @heap: A pointer to the root node of the heap to convert
+ * @size: Address to store the size of the array
+ *
+ * Return: A pointer to array sorted in descending order
+ *	   NULL On failure
+ **/
+int *heap_to_sorted_array(heap_t *heap, size_t *size);
 
 #endif /* BINARY_TREES_H */
