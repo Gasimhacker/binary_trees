@@ -360,5 +360,12 @@ heap_t *heap_insert(heap_t **root, int value);
  *         NULL on failure
  */
 heap_t *array_to_heap(int *array, size_t size);
+/**
+ * heap_extract - Extract the root node from a Max Binary Heap
+ * @root: A pointer to the heap root
+ *
+ * Return: The value of extracted node
+ **/
+int heap_extract(heap_t **root);
 
 #endif /* BINARY_TREES_H */
